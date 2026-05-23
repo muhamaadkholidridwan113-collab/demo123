@@ -9,4 +9,4 @@ resources:
   memory: 512Mi
   replicas: 1
 
-domain: krajanet.deployaja.id
+domain: ridwan.deployaja.id
