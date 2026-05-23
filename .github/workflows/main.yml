@@ -63,7 +63,7 @@ jobs:
           api-token: ${{ secrets.DEPLOYAJA_TOKEN }}
           additional-args: --set container.image=${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
           docker-registry: ${{ env.GH_REGISTRY }}
-          docker-username: ${{ secrets.USERNAME }}
+          docker-username: ${{ github.actor }}
           docker-password: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           
       - name: DeployAja Status
